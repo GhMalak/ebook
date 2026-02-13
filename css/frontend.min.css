@@ -1,0 +1,4 @@
+/* Elementor frontend - base */
+.elementor * { box-sizing: border-box; }
+.e-con-inner { max-width: var(--container-max-width, 1140px); margin: 0 auto; padding: 1rem; }
+.e-flex { display: flex; flex-wrap: wrap; }

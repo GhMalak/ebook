@@ -1,0 +1,4 @@
+/* Kadence theme - global */
+:root { --content-width: 1140px; }
+body { margin: 0; }
+.kt-clear::after { content: ""; display: table; clear: both; }
