@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { site } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Painel | Acesso",
-  description: "Painel de acesso - Faça login para continuar",
+  title: site.titulo,
+  description: site.missao.slice(0, 160),
 };
 
 export default function RootLayout({
