@@ -1,0 +1,248 @@
+/* ============================================
+   FTM - Site institucional - Estilos completos
+   ============================================ */
+
+/* --- Reset e base --- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a202c;
+  background: #fff;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: #2b6cb0; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Acessibilidade: Pular para o conteúdo --- */
+.skip-link.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  background: #2b6cb0;
+  color: #fff;
+}
+.skip-link.screen-reader-text:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+/* --- Wrapper e layout geral --- */
+#wrapper.site { min-height: 100vh; display: flex; flex-direction: column; }
+#inner-wrap.wrap { flex: 1; }
+
+/* --- Header --- */
+#masthead.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.site-header-wrap,
+.site-mobile-header-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+.site-header-upper-inner-wrap { min-height: 1px; }
+
+/* --- Content area --- */
+.content-container.site-container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+.content-area .content-wrap { padding: 2rem 0 3rem; }
+.entry-content-wrap { max-width: 1140px; margin: 0 auto; }
+.entry-content.single-content { padding: 0; }
+
+/* --- Elementor: containers --- */
+.elementor-192 { width: 100%; }
+.e-con { width: 100%; }
+.e-con-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+.e-con-boxed .e-con-inner { padding: 2rem 1rem; }
+.e-con-full .e-con-inner { padding-left: 1rem; padding-right: 1rem; }
+.e-flex { display: flex; flex-wrap: wrap; }
+.e-parent { }
+.e-child { flex: 1 1 auto; min-width: 0; }
+
+/* --- Elementor: widgets e espaçamento --- */
+.elementor-element { margin-bottom: 0; }
+.elementor-widget-container { width: 100%; }
+.elementor-widget:not(:last-child) { margin-bottom: 1.25rem; }
+
+/* --- Títulos (heading) --- */
+.elementor-heading-title {
+  margin: 0 0 0.5rem;
+  font-family: "Roboto Slab", Roboto, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1a202c;
+}
+.elementor-size-default { font-size: 1.25rem; }
+.elementor-size-small { font-size: 1rem; }
+.elementor-size-medium { font-size: 1.5rem; }
+.elementor-size-large { font-size: 1.75rem; }
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a { color: inherit; }
+
+/* --- Texto (text-editor) --- */
+.elementor-widget-text-editor div[style*="white-space"] {
+  white-space: pre-line;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+.elementor-widget-text-editor b { font-weight: 600; color: #2d3748; }
+
+/* --- Imagem --- */
+.elementor-widget-image .elementor-widget-container { text-align: center; }
+.elementor-widget-image img {
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+}
+.elementor-element-fcc33a6 img { max-width: 280px; height: auto; }
+.elementor-element-e97c7b7 img { width: 100%; height: auto; max-height: 320px; object-fit: cover; }
+
+/* --- Ícone (logo/facebook no topo) --- */
+.elementor-widget-icon .elementor-widget-container { text-align: center; }
+.elementor-icon-wrapper { display: inline-block; }
+.elementor-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #2b6cb0;
+  transition: color 0.2s;
+}
+.elementor-icon:hover { color: #215387; }
+.elementor-icon svg { width: 28px; height: 28px; fill: currentColor; }
+
+/* --- Icon box (Instagram) --- */
+.elementor-widget-icon-box .elementor-icon-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.elementor-widget-icon-box .elementor-icon-box-icon { flex-shrink: 0; }
+.elementor-widget-icon-box .elementor-icon-box-icon .elementor-icon {
+  width: 40px;
+  height: 40px;
+}
+.elementor-widget-icon-box .elementor-icon-box-icon .elementor-icon svg { width: 24px; height: 24px; }
+.elementor-icon-box-description {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2b6cb0;
+}
+.elementor-widget-icon-box .elementor-icon-box-content { flex: 1; min-width: 0; }
+
+/* --- Botão (Conversar agora) --- */
+.elementor-button-wrapper { margin-top: 0.5rem; }
+.elementor-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff !important;
+  background: #25d366;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none !important;
+}
+.elementor-button:hover { background: #20bd5a; text-decoration: none !important; }
+.elementor-button-content-wrapper { display: flex; align-items: center; }
+.elementor-button-text { display: inline-block; }
+.elementor-align-center .elementor-button-wrapper { text-align: center; }
+
+/* --- Seção apresentação (LOGIN + ícone) --- */
+.elementor-element-fd07792 .e-con-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.elementor-element-fd07792 .elementor-heading-title { margin: 0; font-size: 1.125rem; }
+
+/* --- Seção logo + CNPJ + missão --- */
+.elementor-element-cc04d67 .e-con-inner { text-align: center; }
+.elementor-element-cc04d67 .elementor-heading-title { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+.elementor-element-cc04d67 .elementor-element-3972ac9,
+.elementor-element-cc04d67 .elementor-element-5a2923b { font-family: ui-monospace, monospace; font-size: 1rem; color: #4a5568; }
+
+/* --- Banner central (imagem full) --- */
+.elementor-element-3d6a279 .e-con-inner { padding: 0; max-width: none; }
+.elementor-element-3d6a279 .elementor-widget-image img { margin: 0; border-radius: 0; }
+
+/* --- Seção contato --- */
+.elementor-element-0fd848b .e-con-inner { text-align: center; }
+.elementor-element-0fd848b .elementor-heading-title { white-space: pre-line; }
+
+/* --- Seção Quem somos --- */
+.elementor-element-800a32e .e-con-inner { text-align: left; }
+.elementor-element-800a32e .elementor-heading-title { margin-top: 1rem; }
+.elementor-element-989b0c3 { margin-top: 1.5rem; }
+
+/* --- Rodapé / Informações legais --- */
+.elementor-element-50e5dee .e-con-inner {
+  background: #f7fafc;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin-top: 2rem;
+  border: 1px solid #e2e8f0;
+}
+.elementor-element-50e5dee .elementor-heading-title {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #4a5568;
+  white-space: pre-line;
+  word-break: break-word;
+}
+.elementor-element-50e5dee .elementor-heading-title a { color: #2b6cb0; }
+.elementor-element-810e55c { margin-top: 1.5rem; }
+.elementor-element-810e55c .elementor-heading-title { font-size: 1rem; }
+
+/* --- Footer site --- */
+#colophon.site-footer {
+  border-top: 1px solid #e2e8f0;
+  background: #f7fafc;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+.site-footer-wrap { max-width: 1140px; margin: 0 auto; }
+
+/* --- Utilitários --- */
+.kt-clear::after { content: ""; display: table; clear: both; }
+.woocommerce-notices-wrapper { margin-bottom: 1rem; }
+.entry.content-bg { background: transparent; }
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .content-container.site-container { padding: 0 1rem; }
+  .e-con-inner { padding-left: 1rem !important; padding-right: 1rem !important; }
+  .elementor-element-fd07792 .e-con-inner { flex-direction: column; text-align: center; }
+  .elementor-element-fcc33a6 img { max-width: 200px; }
+  .elementor-heading-title { font-size: 1.125rem !important; }
+  .elementor-element-50e5dee .elementor-heading-title { font-size: 0.875rem; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .elementor-button { padding: 0.65rem 1.25rem; font-size: 0.875rem; }
+}
