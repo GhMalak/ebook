@@ -6,8 +6,6 @@ export default async function handler(req, res) {
   const numeros = [
     { numero: process.env.WHATSAPP_01, label: "WHATSAPP 01" },
     { numero: process.env.WHATSAPP_02, label: "WHATSAPP 02" },
-    { numero: process.env.WHATSAPP_03, label: "WHATSAPP 03" },
-    { numero: process.env.WHATSAPP_04, label: "WHATSAPP 04" },
   ].filter(n => n.numero);
 
   if (numeros.length === 0) {
